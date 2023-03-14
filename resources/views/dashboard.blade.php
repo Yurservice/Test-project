@@ -37,19 +37,19 @@
 <div class="field formBlcok__field formBlcok__field_col12">
 <div class="field__name">Name:</div>
 <div class="field__inp">
-<input type="text" name="email" placeholder="" value="TestUser">
+<input type="text" name="email" placeholder="" value="{{ auth()->user()->name }}">
 </div>
 </div>
 <div class="field formBlcok__field formBlcok__field_col12">
 <div class="field__name">E-Mail:</div>
 <div class="field__inp">
-<input type="text" name="email" placeholder="" value="testemail@mail.com">
+<input type="text" name="email" placeholder="" value="{{ auth()->user()->email }}">
 </div>
 </div>
 <div class="field formBlcok__field formBlcok__field_col12">
 <div class="field__name">Avatar:</div>
 <div class="field__inp">
-<img src='/images/passport_shout.webp' style='width: 85px'>
+<img src="{{ auth()->user()->avatar }}" style='width: 85px'>
 </div>
 </div>
 

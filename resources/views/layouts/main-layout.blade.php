@@ -291,17 +291,17 @@ Reviews
 <a class="mainMenu__link" href="/itcourse/">Courses</a>
 </div>
 <div class="iconBtnGroup mainMenu__iconBtnGroup">
-<?php if(Auth::check() === false) { ?>
+@if(Auth::check() === false)
 <a alt="Login" title="Login" href="/login/" class="account iconBtnGroup__item">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="17px" height="18px" stroke="black" stroke-width="0.5">
 <path d="M16 16h-1.3A6.8 6.8 0 008 9.2 6.8 6.8 0 001.2 16H0a8 8 0 012.3-5.7 8 8 0 013-1.9 4.6 4.6 0 01-2-3.8A4.6 4.6 0 018 0a4.6 4.6 0 014.6 4.6c0 1.6-.8 3-2 3.8a8 8 0 013 2A8 8 0 0116 16zM11.4 4.6A3.4 3.4 0 008 1.2a3.4 3.4 0 00-3.4 3.4A3.4 3.4 0 008 8a3.4 3.4 0 003.4-3.4z" />
 </svg>
 </a>
-<?php } else { ?>
+@else
 <a alt="Logout" title="Logout" href="/logout" class="account iconBtnGroup__item">
 	<img src='/images/logout.svg' style='width:25px'/>
 </a>
-<?php } ?>
+@endif
 </div>
 </div>
 <div class="mobileDropMenu">

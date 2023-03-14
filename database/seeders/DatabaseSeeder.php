@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
 		'name' => 'TestUser',
 		'email' => 'testemail@mail.com',
 		'password' => bcrypt('password'),
-		'avatar' => '/public/images/avatar.jpg',
+		'avatar' => '/images/passport_shout.webp',
 		'created_at' => date('Y-m-d H:i:s'),
 		'updated_at' => date('Y-m-d H:i:s')
 	]);
